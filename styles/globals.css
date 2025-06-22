@@ -40,3 +40,20 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+button {
+  background: none;
+  border: none;
+}
+
+/* убираем скролбар */
+
+*{
+  overflow-y: scroll;
+}
+* { 
+  scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
