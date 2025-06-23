@@ -1,7 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  font-family: "IBM Plex mono";
+  font-family: "IBM Plex mono", "monospace", sans-serif;
   font-weight: 400;
   font-size: 1.125rem;
   background-color: var(--bg-color);
@@ -30,11 +30,11 @@
   position: relative;
   justify-content: space-between;
   inline-size: 52px;
-  block-size: 26px;
   color: var(--rec-color);
 }
 
-.lamp {
+.rec::after {
+  content: "";
   box-shadow: 0px 0px 4px 2px var(--lamp-color);
   background-color: var(--lamp-color);
   border-radius: 50%;
@@ -106,6 +106,7 @@
 }
 
 .header__theme-menu-button_active {
+  pointer-events: none;
   border: 1px solid var(--btn-color);
 }
 
@@ -173,14 +174,14 @@
 }
 
 .section-what {
-  grid-template-columns: repeat(3, 1fr); /* 315px */ 
+  grid-template-columns: repeat(3, 1fr); /* 315px */
 }
 
 .article-what {
   grid-row: 2;
   grid-column: 1 / 4;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 315px */ 
+  grid-template-columns: repeat(3, 1fr); /* 315px */
   gap: 20px;
 }
 
@@ -190,6 +191,10 @@
 
 .section-how {
   grid-template-columns: 1fr 2fr; /* 315px 649px */
+}
+
+.subtitle-how {
+  margin-block-end: 0;
 }
 
 .subtitle-pictures {
@@ -236,7 +241,7 @@
 
 .footer {
   display: grid;
-  min-block-size: 768px;
+  min-block-size: 100vh;
 }
 
 .header__theme-menu-button:hover {
@@ -249,6 +254,10 @@
   border: none;
   border-bottom: 1px solid var(--link-hover-color);
 }
+
+:focus-visible {
+  outline: none;
+} 
 
 .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--btn-focus-color);
@@ -302,7 +311,7 @@
   }
 
   .section-how {
-     grid-template-columns: 1fr 2fr; /* 236px 472px */
+    grid-template-columns: 1fr 2fr; /* 236px 472px */
   }
 
   .pictures {
@@ -317,13 +326,9 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 192px 230px 318px;
   }
-
-  .footer {
-    min-block-size: 1024px;
-  }
 }
 
-@media (width <= 375px) {
+@media (width <= 575px) { 
   .page {
     min-inline-size: 375px;
   }
@@ -423,7 +428,6 @@
   }
 
   .footer {
-    min-block-size: 667px;
     margin-block-start: 40px;
   }
 }

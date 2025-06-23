@@ -45,15 +45,3 @@ button {
   background: none;
   border: none;
 }
-
-/* убираем скролбар */
-
-*{
-  overflow-y: scroll;
-}
-* { 
-  scrollbar-width: none;
-}
-*::-webkit-scrollbar {
-  display: none;
-}

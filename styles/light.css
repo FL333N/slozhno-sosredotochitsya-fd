@@ -27,7 +27,7 @@
   --link-focus-color: #353430;
 
   --btn-color: #353430;
-  --btn-hover-color: #32312D66;
+  --btn-hover-color: #32312d66;
   --btn-focus-color: #353430;
 
   --lamp-color: transparent;
@@ -35,30 +35,35 @@
   --rectangle-color: #353430;
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-image: url("../images/cover-image-light.png");
+    --bg-color: #fff1f7;
+
+    --accent-color: #ff8dcb;
+
+    --page-title-color: #ffc2e6;
+    --subtitle-color: #353430;
+    --section-title: #353430;
+    --title-color: #353430;
+
+    --text-color: #353430;
+    --shadow-color: #ff0070;
+
+    --link-color: #ff8dcb;
+    --link-hover-color: #353430;
+    --link-focus-color: #353430;
+
+    --btn-color: #353430;
+    --btn-hover-color: #32312d66;
+    --btn-focus-color: #353430;
+
+    --lamp-color: transparent;
+    --rec-color: transparent;
+    --rectangle-color: #353430;
+  }
+}
+
+/* 
 .theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
-  --bg-image: url("../images/cover-image-light.png");
-  --bg-color: #fff1f7;
-
-  --accent-color: #ff8dcb;
-
-  --page-title-color: #ffc2e6;
-  --subtitle-color: #353430;
-  --section-title: #353430;
-  --title-color: #353430;
-
-  --text-color: #353430;
-  --shadow-color: #ff0070;
-
-  --link-color: #ff8dcb;
-  --link-hover-color: #353430;
-  --link-focus-color: #353430;
-
-  --btn-color: #353430;
-  --btn-hover-color: #32312D66;
-  --btn-focus-color: #353430;
-
-  --lamp-color: transparent;
-  --rec-color: transparent;
-  --rectangle-color: #353430;
-}
+} */
