@@ -4,13 +4,13 @@
   font-family: "IBM Plex mono", "monospace", sans-serif;
   font-weight: 400;
   font-size: 1.125rem;
-  background-color: var(--bg-color);
   color: var(--text-color);
   max-inline-size: 1024px;
   min-inline-size: 368px;
-  background: var(--bg-image, url("../images/cover-image.png")) center no-repeat;
+  background: var(--bg-image) center no-repeat; /* убрал обычныую картинку, так как смотриться с разными темами плохо */
   background-attachment: fixed;
   background-size: cover;
+  background-color: var(--bg-color);
 }
 
 .deco-rec {
@@ -167,6 +167,10 @@
 .text-area {
   line-height: 23.4px;
   margin-block-end: 20px;
+}
+
+.text-area__para + * {
+  margin-block-start: 20px;
 }
 
 .section-why {
