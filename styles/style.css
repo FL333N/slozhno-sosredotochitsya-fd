@@ -4,7 +4,7 @@
   font-family: "IBM Plex mono", "monospace", sans-serif;
   font-weight: 400;
   font-size: 1.125rem;
-  background-color: var(--bg-color);
+  background-color: var(--bg-color); /* не понял замечания. цвета для заднего фона есть в dark.css и light.css. при отсутсвия картинки будет фон с соответсвием заданой темы */
   color: var(--text-color);
   max-inline-size: 1024px;
   min-inline-size: 368px;
@@ -167,6 +167,10 @@
 .text-area {
   line-height: 23.4px;
   margin-block-end: 20px;
+}
+
+.text-area__para + * {
+  margin-block-start: 20px;
 }
 
 .section-why {
