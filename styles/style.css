@@ -7,7 +7,7 @@
   color: var(--text-color);
   max-inline-size: 1024px;
   min-inline-size: 368px;
-  background: var(--bg-image) center no-repeat; /* убрал обычныую картинку, так как смотриться с разными темами плохо */
+  background: var(--bg-image) center no-repeat; /* убрал обычныую картинку, так как с разными темами плохо смотриться */
   background-attachment: fixed;
   background-size: cover;
   background-color: var(--bg-color);
